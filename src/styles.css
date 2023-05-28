@@ -1,0 +1,36 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  height: 300;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+#draft {
+  cursor: crosshair;
+}
+
+.controls {
+  /* pointer-events: none; */
+}
+
+.sandwich {
+  position: relative;
+  height: 400;
+  width: 100%;
+}
+
+.sandwich > canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
